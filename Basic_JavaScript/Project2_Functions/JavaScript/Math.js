@@ -4,7 +4,6 @@
 function mathAdd(a, b) {    //This function takes into 2 parameters and adds them toghether
     return a + b;
 }
-
 function mathAdd_Ret(a, b) {
     document.getElementById("Add") .innerHTML ="3 + 10 = " + mathAdd(a, b); //This function prints the results of a + b in this case 3 + 10
 }
@@ -15,7 +14,6 @@ function mathAdd_Ret(a, b) {
 function mathSubtract(a, b) {   //This function takes into 2 parameters and subtracts a - b
     return a - b;
 }
-
 function mathSubt_Ret(a, b) {
     document.getElementById("Subtr") .innerHTML ="3 - 10 = " + mathSubtract(a, b);  //This function prints the results of a - b in this case 3 - 10
 }
@@ -41,6 +39,7 @@ function mathDivide(a, b) { //This function takes into 2 parameters and divides 
 function mathDiv_Ret(a, b) {    //This function prints the results of a / b in this case 3 / 10 and prints it at the id "Divide"
     document.getElementById("Divide") .innerHTML ="3 / 10 = " + mathDivide(a, b);
 }
+
 
 //******************************************************
 //********************BIG 4*****************************
@@ -73,7 +72,6 @@ function increment() {  //This Function increments which essentionaly adds 1
     var inc= 3++;
     document.getElementById("Inc") .innerHTML = "3 incremented by 1 = "+ inc;
 }
-
 function decrement() {  //This Function Decrements which essentionaly subtracts 1
     var dec = 3--;
     document.getElementById("Dec") .innerHTML = "3 decremented by 1 = " + dec;
