@@ -2,7 +2,8 @@
 //********************ADDITION**************************
 //******************************************************
 function mathAdd(a, b) {    //This function takes into 2 parameters and adds them toghether
-    return a + b;
+    a= a += b; // sets a to the value of a + b
+    return a;
 }
 function mathAdd_Ret(a, b) {
     document.getElementById("Add") .innerHTML ="3 + 10 = " + mathAdd(a, b); //This function prints the results of a + b in this case 3 + 10
