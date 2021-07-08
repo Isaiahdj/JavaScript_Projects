@@ -4,12 +4,12 @@ function add_Num() {
     var y = 13; //Local Variable
     document.getElementById("Addition").innerHTML = x + y + "<br>"; //This adds the local and global variable toghether and prints to screen
 }
-
+/*
 function add_fail() {   //This uses Console.log
     Console.log(x + y);
 }
 add_fail(); // this calls the function
-
+*/
 //This function uses the users time and decides around what mealtime it is
 function Mealtimes() { 
     if (new Date().getHours() < 10) {   //If less then 10 then go to next statement
