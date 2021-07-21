@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<title>Pokemon</title>
+		<meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./CSS/OnePage.CSS">
+        <script src="./JavaScript/OnePage.js"></script>
+	</head>
+	<body>
+	
+		<!-- NAV -->
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
+					<a href="#home" id="link"><li>HOME</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#contact"><li>Trainer</li></a>
+				</ul>
+			</div>
+		</div>
+		<!-- END NAV -->
+
+		<!--HOME-->
+		<div id="home">
+			<div class="container">
+                <div class="text-center">
+				    <span class="head-main">Pokemon</span>
+                    <p class="quote">
+                        “Strong Pokemon. Weak Pokemon. That is only the selfish perception of people. 
+                        <br>Truly skilled trainers should try to win with all their favorites.” - Karen.
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2F46tGehnfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+			</div>
+		</div>
+		<!-- END HOME -->
+
+		<!-- GALLERY -->
+		<section id="gallery">
+			<div >
+				<h1>Gallery</h1>
+				<div class="flex-container">
+                
+					<!-- PHOTO CONTAINER 1 -->
+					<div class="photo-container">
+                        <div class="photo">
+							<img src="./Images/thumb/thumbnail_bulbasaur.png" alt="Bulbasaur">
+                            <div class="photo-overlay" onclick="openModal();currentSlide(1)">
+								<h3 class="white-head">Start your adventure 
+                                    <br>with Bulbasaur today!</h3>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 1 -->
+
+					<!-- PHOTO CONTAINER 2 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/thumb/thumbnail_Squirtle.png" alt="Squirtle">
+							<div class="photo-overlay" onclick="openModal();currentSlide(2)">
+								<h3 class="white-head">Start your adventure 
+                                    <br>with Squirtle today!</h3>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 2 -->
+
+					<!-- PHOTO CONTAINER 3 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/thumb/thumbnail_charmander.png" alt="Charmander">
+							<div class="photo-overlay" onclick="openModal();currentSlide(3)">
+								<h3 class="white-head">Start your adventure 
+                                    <br>with Charmander today!</h3>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 3 -->
+
+					<!-- PHOTO CONTAINER 4 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/thumb/thumbnail_Ivysaur.png" alt="Ivysaur"  class= "hover-shadow cursor">
+							<div class="photo-overlay" onclick="openModal();currentSlide(4)">
+								<h3 class="white-head">With your help Bulbasaur
+                                    <br>could Evolve!</h3>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 4 -->
+
+					<!-- PHOTO CONTAINER 5 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/thumb/thumbnail_wartortle.png" alt="Wartortle">
+							<div class="photo-overlay" onclick="openModal();currentSlide(5)">
+								<h3 class="white-head">With your help Squirtle
+                                    <br>could Evolve!</h3>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 5 -->
+
+					<!-- PHOTO CONTAINER 6 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/thumb/thumbnail_Charmeleon.png" alt="Charmeleon">
+							<div class="photo-overlay" onclick="openModal();currentSlide(6)">
+								<h3 class="white-head">With your help Charmander
+                                    <br>could Evolve!</h3>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 6 -->
+
+					<!-- PHOTO CONTAINER 7 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/thumb/thumbnail_Venusaur.png" alt="Venusaur">
+							<div class="photo-overlay" onclick="openModal();currentSlide(7)">
+								<h3 class="white-head">With the right trainer Bulbasaur
+                                    <br>could become a legend!</h3>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 7 -->
+
+					<!-- PHOTO CONTAINER 8 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/thumb/thumbnail_blastois.png" alt="Blastoise">
+							<div class="photo-overlay" onclick="openModal();currentSlide(8)">
+								<h3 class="white-head">With the right trainer Squirtle
+                                    <br>could become a legend!</h3>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 8 -->
+
+					<!-- PHOTO CONTAINER 9 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/thumb/thumbnail_Charizard.png" alt="Charizard">
+							<div class="photo-overlay" onclick="openModal();currentSlide(9)">
+								<h3 class="white-head">With the right trainer Bulbasaur
+                                    <br>Could become a legend!</h3>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 9 -->
+
+				</div>
+			</div>
+
+            <!--Modal/Lightbox-->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 9</div>
+                    <img src="./Images/thumb/thumbnail_bulbasaur.png" width= "100%" height="380" frameBorder = "0" allowtransparency = "true">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 9</div>
+                    <img src="./Images/thumb/thumbnail_Squirtle.png" width= "100%" height="380" frameBorder = "0" allowtransparency = "true">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 9</div>
+                    <img src="./Images/thumb/thumbnail_charmander.png" width= "100%" height="380" frameBorder = "0" allowtransparency = "true">
+                  </div>
+                  
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 9</div>
+                    <img src="./Images/thumb/thumbnail_Ivysaur.png" width= "100%" height="380" frameBorder = "0" allowtransparency = "true">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">5 / 9</div>
+                    <img src="./Images/thumb/thumbnail_wartortle.png" width= "100%" height="380" frameBorder = "0" allowtransparency = "true">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">6 / 9</div>
+                    <img src="./Images/thumb/thumbnail_Charmeleon.png" width= "100%" height="380" frameBorder = "0" allowtransparency = "true">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">7 / 9</div>
+                    <img src="./Images/thumb/thumbnail_Venusaur.png" width= "100%" height="380" frameBorder = "0" allowtransparency = "true">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">8 / 9</div>
+                    <img src="./Images/thumb/thumbnail_blastois.png" width= "100%" height="380" frameBorder = "0" allowtransparency = "true">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">9 / 9</div>
+                    <img src="./Images/thumb/thumbnail_Charizard.png" width= "100%" height="380" frameBorder = "0" allowtransparency = "true">
+                  </div>
+                  
+                  <!--Next/Previous controls-->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                  <!--Caption text-->
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+              
+                  <!--Thumbnail image controls-->
+                  <div class="column">
+                    <img class="demo cursor" src="./Images/thumb/thumbnail_bulbasaur.png" width = "83" height="83" onclick="currentSlide(1)" alt="Bulbasaur">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./Images/thumb/thumbnail_Squirtle.png" width = "83" height="83" onclick="currentSlide(2)" alt="Squirtle">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./Images/thumb/thumbnail_charmander.png" width = "83" height="83" onclick="currentSlide(3)" alt="Charmander">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./Images/thumb/thumbnail_Ivysaur.png" width = "83" height="83" onclick="currentSlide(4)" alt="Ivysaur">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./Images/thumb/thumbnail_wartortle.png" width = "83" height="83" onclick="currentSlide(5)" alt="Wartortle">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./Images/thumb/thumbnail_Charmeleon.png" width = "83" height="83" onclick="currentSlide(6)" alt="Charmeleon">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./Images/thumb/thumbnail_Venusaur.png" width = "83" height="83" onclick="currentSlide(7)" alt="Venusaur">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./Images/thumb/thumbnail_blastois.png" width = "83" height="83" onclick="currentSlide(8)" alt="Blastois">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./Images/thumb/thumbnail_Charizard.png" width = "83" height="83" onclick="currentSlide(9)" alt="Charizard">
+                  </div>
+                </div>
+              </div>
+		</section>
+		<!-- END GALLERY -->
+
+		<!-- RSVP -->
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Trainer</h1>
+					<div class="reservation">
+						<h2><span>Your next adventure awaits!</span>
+							<br>Sign up today to pick your starter 
+							<br>and to start your adventure today!
+						</h2>
+						<p class="rsvp-text">
+							Please provide us with your basic information 
+                            <br>and an available date/time you would like to pick up your pokemon. 
+						</p>
+						<div class="form-rsvp">
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="" placeholder="First Name">
+								<input class="rsvp" type="text" value="" placeholder="Last Name">
+								<input class="rsvp" type="text" value="" placeholder="Email Address">
+								<input class="rsvp" type="text" value="" placeholder="Phone Number">
+                                <input class="rsvp" type="text" value="" placeholder="Date">
+                                <input class="rsvp" type="text" value="" placeholder="Time">
+                                <input class="rsvp" type="text" value="" placeholder="Starter">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div class="submit">
+									<input type="submit" value="Submit"> 
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END RSVP -->
+
+		<!-- FOOTER -->
+		<div id="footer">
+			www.pokemon.you &nbsp;|&nbsp; &copy; 2021
+		</div>
+		<!-- END FOOTER -->
+
+	</body>
+</html>
