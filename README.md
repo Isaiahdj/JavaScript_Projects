@@ -19,7 +19,7 @@ A classic game of Tic Tac Toe. In this game the user has to play against the com
 This is a sleak web calculator that can add, subtract, multiply, and divide.
 
 ### [Cinemas](./JavaScript_Projects/Cinemas)
-This is a moc cinema website made using bootsrap. This project is very similar to the [Movie theater project](../HTML-CSS_projects/Movie_Theater_BS) I did in my html and css repository,  the main difference being the functionality of the form. This new version makes the form a pop up rather then just always there.
+This is a moc cinema website made using bootsrap. This project is very similar to the [Movie theater project](https://github.com/Isaiahdj/HTML-CSS_projects/tree/main/Movie_Theater_BS) I did in my html and css repository,  the main difference being the functionality of the form. This new version makes the form a pop up rather then just always there.
 
 ### [One Page Site](./JavaScript_Projects/OnePage)
 This is a webpage that has an embeded video, pictures, and a form users can fill out and is very similar to my [One page project](../HTML-CSS_projects/One_Page_Website) in my html and css repository. The main difference between the two is in this new project I added a light box for the 9 pictures that is trigured when an image is clicked.
